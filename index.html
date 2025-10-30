@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Should Be Banned in Classroom</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(180deg, #2c3e50 0%, #1a1a2e 50%, #0f0f1e 100%);
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #fff;
+            padding: 80px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #2c3e50;
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-image {
+            width: 580px;   
+            height: 320px;  
+            object-fit: cover;
+            transform: translateX(40px); 
+            transition: all 0.3s ease;
+            position: absolute;
+            right: 30px;
+        }
+
+        /* Argument Section */
+        .argument-section {
+            text-align: center;
+            padding: 80px 100px;
+            color: #fff;
+        }
+
+        .argument-section h2 {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .argument-section p {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 50px;
+        }
+
+        .argument-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .argument-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        .argument-card h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .argument-card p {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        .argument-card.full {
+            grid-column: 1 / -1;
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            color: #333;
+        }
+
+        .argument-card.full h3 {
+            color: #333;
+        }
+
+        .argument-card.full p {
+            color: #666;
+        }
+
+        .card-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        /* Impact Sections */
+        .impact-section {
+            background: #fff;
+            padding: 60px 100px;
+            margin: 50px;
+            border-radius: 20px;
+        }
+
+        .impact-section h2 {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .impact-card {
+            text-align: center;
+        }
+
+        .impact-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .impact-card h3 {
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .impact-card p {
+            font-size: 12px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Negative Impact */
+        .negative-impact {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .negative-card {
+            text-align: center;
+        }
+
+        .negative-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .negative-card h3 {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .negative-card p {
+            font-size: 10px;
+            color: #666;
+        }
+
+        /* Conclusion */
+        .conclusion {
+            text-align: center;
+            padding: 80px 100px;
+            color: #fff;
+        }
+
+        .conclusion h2 {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+        }
+
+        .conclusion-box {
+            background: #fff;
+            color: #333;
+            padding: 60px;
+            border-radius: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .conclusion-box p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Color backgrounds for images */
+        .bg-pink { background: #ffc0cb; }
+        .bg-red { background: #dc3545; }
+        .bg-yellow { background: #ffc107; }
+        .bg-orange { background: #fd7e14; }
+        .bg-blue { background: #0dcaf0; }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            transition: 0.3s;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero {
+                padding: 60px 50px;
+            }
+
+            .argument-section,
+            .conclusion {
+                padding: 60px 50px;
+            }
+
+            .impact-section {
+                padding: 50px;
+                margin: 30px;
+            }
+
+            .impact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .negative-impact {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 30px;
+                flex-wrap: wrap;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 15px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero {
+                flex-direction: column;
+                padding: 40px 30px;
+                margin: 0 20px;
+                text-align: center;
+                justify-content: space-around;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .argument-section,
+            .conclusion {
+                padding: 40px 30px;
+            }
+
+            .argument-section h2,
+            .conclusion h2 {
+                font-size: 28px;
+            }
+
+            .argument-cards {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .impact-section {
+                padding: 40px 30px;
+                margin: 20px;
+            }
+
+            .impact-section h2 {
+                font-size: 28px;
+            }
+
+            .impact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .negative-impact {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .conclusion-box {
+                padding: 40px 30px;
+            }
+
+            .conclusion-box p {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            .hero {
+                padding: 30px 20px;
+                margin: 0 10px;
+            }
+
+            .hero h1 {
+                font-size: 24px;
+            }
+
+            .hero p {
+                font-size: 13px;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 11px;
+            }
+
+            .argument-section,
+            .conclusion {
+                padding: 30px 20px;
+            }
+
+            .argument-section h2,
+            .conclusion h2,
+            .impact-section h2 {
+                font-size: 24px;
+            }
+
+            .argument-card {
+                padding: 30px 20px;
+            }
+
+            .argument-card h3,
+            .impact-card h3 {
+                font-size: 16px;
+            }
+
+            .argument-card p,
+            .impact-card p {
+                font-size: 12px;
+            }
+
+            .impact-section {
+                padding: 30px 20px;
+                margin: 15px;
+            }
+
+            .negative-impact {
+                grid-template-columns: 1fr;
+            }
+
+            .conclusion-box {
+                padding: 30px 20px;
+            }
+
+            .conclusion-box p {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">GROUP 6</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Argument</a></li>
+            <li><a href="#">Impact</a></li>
+            <li><a href="#">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>PHONE SHOULD BE BANNED IN CLASSROOM</h1>
+            <p>In today's digital era, mobile phones have become an important part of students' daily lives. Many students use them to communicate, search for information, and access learning materials. However, the use of mobile phones in the classroom often brings more harm than benefit. Therefore, mobile phones should be banned in the classroom to create a more focused learning environment.</p>
+            <button class="btn">Read More →</button>
+        </div>
+        <img src="WhatsApp Image 2025-10-27 at 13.19.15.jpeg" alt="Student" class="hero-image">
+    </section>
+
+    <!-- Argument Section -->
+    <section class="argument-section">
+        <h2>ARGUMENT</h2>
+        <p>Here are the reasons to ban mobile phones in the classroom:</p>
+        
+        <div class="argument-cards">
+            <div class="argument-card">
+                <div class="card-icon">🧠</div>
+                <h3>DISTRACTION IN LEARNING</h3>
+                <p>Firstly, mobile phones can be a big distraction for students. Instead of paying attention to the teacher, students tend to check messages, scroll social media, or play games. This reduces their focus and makes it difficult to understand the lesson. Teachers also find it hard to control the class when students are busy with their devices.</p>
+            </div>
+            
+            <div class="argument-card">
+                <div class="card-icon">📱</div>
+                <h3>Cheating and Dishonesty</h3>
+                <p>Secondly, mobile phones can encourage cheating and reduce honesty in learning. With internet access, students can easily find answers during exams or copy information from websites. This behavior weakens their creativity, independence, and academic integrity. Education should teach students to think critically, not to depend on technology to solve every problem.
+</p>
+            </div>
+            
+            <div class="argument-card full">
+                <div class="card-icon">💡</div>
+                <h3>SOCIAL AND PRIVACY PROBLEMS</h3>
+                <p>Thirdly, mobile phones can cause social problems such as cyberbullying or invasion of privacy. Some students take photos or videos of others without permission and share them online. This can embarrass classmates and disturb the sense of safety in the classroom. A school should be a safe space for learning, not a place for digital harassment.
+</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Positive Impact -->
+    <section class="impact-section">
+        <h2>POSITIVE IMPACT</h2>
+        <div class="impact-grid">
+            <div class="impact-card">
+                <img src="WhatsApp Image 2025-10-27 at 13.19.17 (1).jpeg" alt="Learning" class="impact-image">
+                <h3>Students can access learning materials quickly</h3>
+                <p>Mobile phones provide instant access to educational resources, online libraries, and learning platforms, enabling students to expand their knowledge beyond traditional textbooks.</p>
+            </div>
+            
+            <div class="impact-card">
+                <img src="ipuk.jpg" alt="Emergency" class="impact-image bg-pink">
+                <h3>Mobile phones help in emergencies</h3>
+                <p>In urgent situations, students can quickly reach out to their parents, teachers, or emergency services, ensuring their safety and well-being at all times.</p>
+            </div>
+            
+            <div class="impact-card">
+                <img src="WhatsApp Image 2025-10-27 at 13.19.16 (3).jpeg" alt="Digital Learning" class="impact-image bg-red">
+                <h3>Can support digital learning outside the classroom</h3>
+                <p>Mobile devices enable students to continue their education beyond school hours through educational apps, online courses, and collaborative learning platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Negative Impact -->
+    <section class="impact-section">
+        <h2>NEGATIVE IMPACT</h2>
+        <div class="negative-impact">
+            <div class="negative-card">
+                <img src="WhatsApp Image 2025-10-27 at 13.19.16.jpeg" alt="Distraction" class="negative-image">
+                <h3>Causes focus to be disturbed</h3>
+            </div>
+            
+            <div class="negative-card">
+                <img src="WhatsApp Image 2025-10-27 at 13.19.14.jpeg" alt="Social Media" class="negative-image bg-yellow">
+                <h3>Triggers addiction to social media</h3>
+            </div>
+            
+            <div class="negative-card">
+                <img src="WhatsApp Image 2025-10-27 at 13.19.16 (2).jpeg" alt="Cheating" class="negative-image">
+                <h3>Can make cheating easier during exams</h3>
+            </div>
+            
+            <div class="negative-card">
+                <img src="WhatsApp Image 2025-10-27 at 13.19.15 (1).jpeg" alt="Attention" class="negative-image bg-orange">
+                <h3>Reduces attention</h3>
+            </div>
+            
+            <div class="negative-card">
+                <img src="WhatsApp Image 2025-10-27 at 13.19.17.jpeg" alt="Privacy" class="negative-image bg-blue">
+                <h3>Affects students' online privacy</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="conclusion">
+        <h2>CONCLUSION</h2>
+        <div class="conclusion-box">
+            <p>In conclusion, although mobile phones have many useful functions, they should be banned in classrooms because they distract students, reduce honesty, and cause social problems. Without mobile phones, students can focus more, learn responsibly, and respect the learning environment.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
